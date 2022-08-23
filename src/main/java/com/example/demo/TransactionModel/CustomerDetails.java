@@ -11,13 +11,13 @@ public class CustomerDetails {
 	String BankName;
 	float Balance;
 	boolean overdraft;
-	boolean TerrorHistory;
+	
 	public CustomerDetails() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	public CustomerDetails(int customer_id, String account_holder_Name, Long account_No, String bankName, float balance,
-			boolean overdraft, boolean terrorHistory) {
+			boolean overdraft) {
 		super();
 		Customer_id = customer_id;
 		Account_holder_Name = account_holder_Name;
@@ -25,7 +25,7 @@ public class CustomerDetails {
 		BankName = bankName;
 		Balance = balance;
 		this.overdraft = overdraft;
-		TerrorHistory = terrorHistory;
+		
 	}
 	public int getCustomer_id() {
 		return Customer_id;
@@ -63,17 +63,12 @@ public class CustomerDetails {
 	public void setOverdraft(boolean overdraft) {
 		this.overdraft = overdraft;
 	}
-	public boolean isTerrorHistory() {
-		return TerrorHistory;
-	}
-	public void setTerrorHistory(boolean terrorHistory) {
-		TerrorHistory = terrorHistory;
-	}
+	
 	@Override
 	public String toString() {
 		return "CustomerDetails [Customer_id=" + Customer_id + ", Account_holder_Name=" + Account_holder_Name
 				+ ", Account_No=" + Account_No + ", BankName=" + BankName + ", Balance=" + Balance + ", overdraft="
-				+ overdraft + ", TerrorHistory=" + TerrorHistory + "]";
+				+ overdraft + "]";
 	}
 	
 	
