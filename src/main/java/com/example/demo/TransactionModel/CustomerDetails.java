@@ -5,57 +5,55 @@ import javax.persistence.Id;
 @Entity
 public class CustomerDetails {
 	@Id
-	int Customer_id;
-	String Account_holder_Name;
-	Long Account_No;
-	String BankName;
-	float Balance;
+	int customer_id;
+	String accountholdername;
+	long accountno;
+	String bankName;
+	float balance;
 	boolean overdraft;
-	
 	public CustomerDetails() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public CustomerDetails(int customer_id, String account_holder_Name, Long account_No, String bankName, float balance,
+	public CustomerDetails(int customer_id, String accountholdername, long accountno, String bankName, float balance,
 			boolean overdraft) {
 		super();
-		Customer_id = customer_id;
-		Account_holder_Name = account_holder_Name;
-		Account_No = account_No;
-		BankName = bankName;
-		Balance = balance;
+		this.customer_id = customer_id;
+		this.accountholdername = accountholdername;
+		this.accountno = accountno;
+		this.bankName = bankName;
+		this.balance = balance;
 		this.overdraft = overdraft;
-		
 	}
 	public int getCustomer_id() {
-		return Customer_id;
+		return customer_id;
 	}
 	public void setCustomer_id(int customer_id) {
-		Customer_id = customer_id;
+		this.customer_id = customer_id;
 	}
-	public String getAccount_holder_Name() {
-		return Account_holder_Name;
+	public String getAccountholdername() {
+		return accountholdername;
 	}
-	public void setAccount_holder_Name(String account_holder_Name) {
-		Account_holder_Name = account_holder_Name;
+	public void setAccountholdername(String accountholdername) {
+		this.accountholdername = accountholdername;
 	}
-	public Long getAccount_No() {
-		return Account_No;
+	public long getAccountno() {
+		return accountno;
 	}
-	public void setAccount_No(Long account_No) {
-		Account_No = account_No;
+	public void setAccountno(long accountno) {
+		this.accountno = accountno;
 	}
 	public String getBankName() {
-		return BankName;
+		return bankName;
 	}
 	public void setBankName(String bankName) {
-		BankName = bankName;
+		this.bankName = bankName;
 	}
 	public float getBalance() {
-		return Balance;
+		return balance;
 	}
 	public void setBalance(float balance) {
-		Balance = balance;
+		this.balance = balance;
 	}
 	public boolean isOverdraft() {
 		return overdraft;
@@ -63,15 +61,11 @@ public class CustomerDetails {
 	public void setOverdraft(boolean overdraft) {
 		this.overdraft = overdraft;
 	}
-	
 	@Override
 	public String toString() {
-		return "CustomerDetails [Customer_id=" + Customer_id + ", Account_holder_Name=" + Account_holder_Name
-				+ ", Account_No=" + Account_No + ", BankName=" + BankName + ", Balance=" + Balance + ", overdraft="
+		return "CustomerDetails [customer_id=" + customer_id + ", accountholdername=" + accountholdername
+				+ ", accountno=" + accountno + ", bankName=" + bankName + ", balance=" + balance + ", overdraft="
 				+ overdraft + "]";
 	}
 	
-	
-	
-	
-	}
+		}
